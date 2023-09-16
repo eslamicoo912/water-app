@@ -1,0 +1,32 @@
+<%- include('./includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+            <header>
+                <h1>
+                    <%= pageTitle %>
+                </h1>
+            </header>
+
+            <form class="parameter-form" action="/consumptionTank2" method="POST">
+                <label for="entry_id">entry_id:</label>
+                <input type="text" id="entry_id" name="entry_id" placeholder="id value" value="<%= entry_id %>"
+                    required">
+
+                <label for="year">year:</label>
+                <input type="text" id="year" name="year" placeholder="year" value="<%= year %>" required>
+
+                <label for="month">month:</label>
+                <input type="text" id="month" name="month" placeholder="month" value="<%= month %>" required>
+
+                <label for="day">day:</label>
+                <input type="text" id="day" name="day" placeholder="day" value="<%= day %>" required>
+
+                <label for="hour">hour:</label>
+                <input type="text" id="hour" name="hour" placeholder="hour" value="<%= hour %>" required>
+
+                <label for="minute">minute:</label>
+                <input type="text" id="minute" name="minute" placeholder="minute" value="<%= minute %>" required>
+
+                <%- include('./includes/end.ejs') %>

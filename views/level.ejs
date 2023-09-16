@@ -1,0 +1,16 @@
+<%- include('./includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+            <header>
+                <h1>
+                    <%= pageTitle %>
+                </h1>
+            </header>
+
+            <form class="parameter-form" action="/level" method="POST">
+                <label for="Hour">Hour:</label>
+                <input type="text" id="Hour" name="Hour" placeholder="Hour value" value="<%= Hour %>" required>
+
+                <%- include('./includes/end.ejs') %>

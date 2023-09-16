@@ -1,0 +1,36 @@
+<br><br>
+<button onclick="make_prediction()">Predict</button>
+<input id="answer" name="answer" placeholder="Prediction appears here" value="<%= answer %>" readonly>
+</form>
+
+<footer>
+    <p>&copy; 2023 Fci Zu</p>
+</footer>
+
+<% if (path==='/portability' ) { %>
+    <script src="/js/script_portability.js"></script>
+    <% } else if (path==='/level' ) { %>
+        <script src="/js/script_level.js"></script>
+        <% } else if (path==='/treatment' ) { %>
+            <script src="/js/script_treatment.js"></script>
+            <% } else if (path==='/consumptionTank1' ) { %>
+                <script src="/js/script_ConsumptionTank1.js"></script>
+                <% } else if (path==='/consumptionTank2' ) { %>
+                    <script src="/js/script_ConsumptionTank2.js"></script>
+                    <% } else if (path==='/leak/accelerometerbranched' ) { %>
+                        <script src="/js/script_AccelerometerBranched.js"></script>
+                        <% } else if (path==='/leak/accelerometerlooped' ) { %>
+                            <script src="/js/script_AccelerometerLooped.js"></script>
+                            <% } else if (path==='/leak/hydrophonebranched' ) { %>
+                                <script src="/js/script_HydrophoneBranched.js"></script>
+                                <% } else if (path==='/leak/hydrophonelooped' ) { %>
+                                    <script src="/js/script_HydrophoneLooped.js"></script>
+                                    <% } else if (path==='/leak/pressurebranched' ) { %>
+                                        <script src="/js/script_PressureBranched.js"></script>
+                                        <% } else if (path==='/leak/pressurelooped' ) { %>
+                                            <script src="/js/script_PressureLooped.js"></script>
+                                            <% } %>
+
+                                                </body>
+
+                                                </html>

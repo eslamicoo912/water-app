@@ -1,0 +1,98 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("./img1.jpg");
+  /* background-color: #f5f5f5; */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.parameter-form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.parameter-form label {
+  display: block;
+  margin: 20px 0px 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.parameter-form input[type="text"],
+.parameter-form select {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.parameter-form input[type="text"]:focus,
+.parameter-form select:focus {
+  border-color: #007bff;
+}
+
+.parameter-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.parameter-form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Simple animation for the header */
+header h1 {
+  animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,47 @@
+<%- include('./includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+            <header>
+                <h1>
+                    <%= pageTitle %>
+                </h1>
+            </header>
+
+            <form class="parameter-form" action="/portability" method="POST">
+                <label for="ph">pH:</label>
+                <input type="text" id="ph" name="ph" placeholder="pH value" value="<%= ph %>" required>
+
+                <label for="hardness">Hardness:</label>
+                <input type="text" id="hardness" name="hardness" placeholder="hardness value" value="<%= hardness %>"
+                    required>
+
+                <label for="solids">Solids:</label>
+                <input type="text" id="solids" name="solids" placeholder="solids value" value="<%= solids %>" required>
+
+                <label for="chloramines">Chloramines:</label>
+                <input type="text" id="chloramines" name="chloramines" placeholder="chloramines value"
+                    value="<%= chloramines %>" required>
+
+                <label for="sulfate">Sulfate:</label>
+                <input type="text" id="sulfate" name="sulfate" placeholder="sulfate value" value="<%= sulfate %>"
+                    required>
+
+                <label for="conductivity">Conductivity:</label>
+                <input type="text" id="conductivity" name="conductivity" placeholder="conductivity value"
+                    value="<%= conductivity %>" required>
+
+                <label for="organic_carbon">Organic Carbon:</label>
+                <input type="text" id="organic_carbon" name="organic_carbon" placeholder="organic carbon value"
+                    value="<%= organic_carbon %>" required>
+
+                <label for="trihalomethanes">Trihalomethanes:</label>
+                <input type="text" id="trihalomethanes" name="trihalomethanes" placeholder="trihalomethanes value"
+                    value="<%= trihalomethanes %>" required>
+
+                <label for="turbidity">Turbidity:</label>
+                <input type="text" id="turbidity" name="turbidity" placeholder="turbidity value"
+                    value="<%= turbidity %>" required>
+
+                <%- include('./includes/end.ejs') %>

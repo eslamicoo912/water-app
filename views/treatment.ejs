@@ -1,0 +1,22 @@
+<%- include('./includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('./includes/navigation.ejs') %>
+            <header>
+                <h1>
+                    <%= pageTitle %>
+                </h1>
+            </header>
+
+            <form class="parameter-form" action="/treatment" method="POST">
+                <label for="VAR">VAR:</label>
+                <input type="text" id="VAR" name="VAR" placeholder="VAR value" value="VAR" required">
+
+                <label for="Country">Country:</label>
+                <input type="text" id="Country" name="Country" placeholder="Country value" value="Country" required>
+
+                <label for="Year">Year:</label>
+                <input type="text" id="Year" name="Year" placeholder="Year value" value="Year" required>
+
+                <%- include('./includes/end.ejs') %>
